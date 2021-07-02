@@ -10,23 +10,27 @@
 
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -53,7 +57,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-index">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -67,17 +71,14 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">cli</a>
-        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="In-development version">2.0.0.9000</span>
+        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="In-development version">3.0.0.9000</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../reference/faq.html">FAQ</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -90,27 +91,33 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/pluralization.html">CLI pluralization</a>
+      <a href="../articles/semantic-cli.html">Building a Semantic CLI</a>
+    </li>
+    <li>
+      <a href="../articles/usethis-ui.html">From usethis::ui Functions to cli</a>
+    </li>
+    <li>
+      <a href="../articles/pluralization.html">cli Pluralization</a>
+    </li>
+    <li>
+      <a href="../articles/progress.html">Introduction to Progress Bars in cli</a>
+    </li>
+    <li>
+      <a href="../articles/progress-advanced.html">Advanced cli Progress Bars</a>
     </li>
     <li>
       <a href="../articles/rules-boxes-trees.html">Rules, Boxes and Trees</a>
     </li>
-    <li>
-      <a href="../articles/semantic-cli.html">Building a Semantic CLI</a>
-    </li>
-    <li>
-      <a href="../articles/usethis-ui.html">From usethis::ui functions to cli</a>
-    </li>
   </ul>
 </li>
 <li>
-  <a href="../news/index.html">Changelog</a>
+  <a href="../news/index.html">News</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/r-lib/cli">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/r-lib/cli/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -145,6 +152,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -163,6 +175,12 @@
           <p><code><a href="themes.html">themes</a></code> </p>
         </td>
         <td><p>CLI themes</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="faq.html">faq</a></code> </p>
+        </td>
+        <td><p>Frequently Asked Questions</p></td>
       </tr>
     </tbody><tbody>
       <tr>
@@ -171,7 +189,18 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
+        
+        <td>
+          <p><code><a href="cli.html">cli()</a></code> </p>
+        </td>
+        <td><p>Compose multiple cli functions</p></td>
+      </tr><tr>
         
         <td>
           <p><code><a href="cli_alert.html">cli_alert()</a></code> <code><a href="cli_alert.html">cli_alert_success()</a></code> <code><a href="cli_alert.html">cli_alert_danger()</a></code> <code><a href="cli_alert.html">cli_alert_warning()</a></code> <code><a href="cli_alert.html">cli_alert_info()</a></code> </p>
@@ -183,6 +212,12 @@
           <p><code><a href="cli_blockquote.html">cli_blockquote()</a></code> </p>
         </td>
         <td><p>CLI block quote</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cli_bullets.html">cli_bullets()</a></code> </p>
+        </td>
+        <td><p>List of items</p></td>
       </tr><tr>
         
         <td>
@@ -282,9 +317,21 @@
       </tr><tr>
         
         <td>
+          <p><code><a href="cli_vec.html">cli_vec()</a></code> </p>
+        </td>
+        <td><p>Add custom cli style to a vector</p></td>
+      </tr><tr>
+        
+        <td>
           <p><code><a href="cli_verbatim.html">cli_verbatim()</a></code> </p>
         </td>
         <td><p>CLI verbatim text</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="format_inline.html">format_inline()</a></code> </p>
+        </td>
+        <td><p>Format and returns a line of text</p></td>
       </tr>
     </tbody><tbody>
       <tr>
@@ -293,6 +340,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -319,12 +371,23 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
           <p><code><a href="pluralization.html">pluralization</a></code> </p>
         </td>
         <td><p>CLI pluralization</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="pluralize.html">pluralize()</a></code> </p>
+        </td>
+        <td><p>String templating with pluralization</p></td>
       </tr><tr>
         
         <td>
@@ -335,16 +398,138 @@
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-terminal-colors" class="hasAnchor"><a href="#section-terminal-colors" class="anchor"></a>Terminal Colors</h2>
+          <h2 id="section-progress-bars" class="hasAnchor"><a href="#section-progress-bars" class="anchor"></a>Progress bars</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="ansi-styles.html">bg_black()</a></code> <code><a href="ansi-styles.html">bg_blue()</a></code> <code><a href="ansi-styles.html">bg_cyan()</a></code> <code><a href="ansi-styles.html">bg_green()</a></code> <code><a href="ansi-styles.html">bg_magenta()</a></code> <code><a href="ansi-styles.html">bg_red()</a></code> <code><a href="ansi-styles.html">bg_white()</a></code> <code><a href="ansi-styles.html">bg_yellow()</a></code> <code><a href="ansi-styles.html">col_black()</a></code> <code><a href="ansi-styles.html">col_blue()</a></code> <code><a href="ansi-styles.html">col_cyan()</a></code> <code><a href="ansi-styles.html">col_green()</a></code> <code><a href="ansi-styles.html">col_magenta()</a></code> <code><a href="ansi-styles.html">col_red()</a></code> <code><a href="ansi-styles.html">col_white()</a></code> <code><a href="ansi-styles.html">col_yellow()</a></code> <code><a href="ansi-styles.html">col_grey()</a></code> <code><a href="ansi-styles.html">col_silver()</a></code> <code><a href="ansi-styles.html">style_dim()</a></code> <code><a href="ansi-styles.html">style_blurred()</a></code> <code><a href="ansi-styles.html">style_bold()</a></code> <code><a href="ansi-styles.html">style_hidden()</a></code> <code><a href="ansi-styles.html">style_inverse()</a></code> <code><a href="ansi-styles.html">style_italic()</a></code> <code><a href="ansi-styles.html">style_reset()</a></code> <code><a href="ansi-styles.html">style_strikethrough()</a></code> <code><a href="ansi-styles.html">style_underline()</a></code> </p>
+          <p><code><a href="cli_progress_along.html">cli_progress_along()</a></code> </p>
+        </td>
+        <td><p>Add a progress bar to a mapping function or for loop</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cli_progress_bar.html">cli_progress_bar()</a></code> <code><a href="cli_progress_bar.html">cli_progress_update()</a></code> <code><a href="cli_progress_bar.html">cli_progress_done()</a></code> </p>
+        </td>
+        <td><p>cli progress bars</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cli_progress_message.html">cli_progress_message()</a></code> </p>
+        </td>
+        <td><p>Simplified cli progress messages</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cli_progress_output.html">cli_progress_output()</a></code> </p>
+        </td>
+        <td><p>Add text output to a progress bar</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cli_progress_step.html">cli_progress_step()</a></code> </p>
+        </td>
+        <td><p>Simplified cli progress messages, with styling</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="progress-variables.html">progress-variables</a></code> </p>
+        </td>
+        <td><p>Progress bar variables</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-progress-bars-in-c-c-" class="hasAnchor"><a href="#section-progress-bars-in-c-c-" class="anchor"></a>Progress bars in C/C++</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="progress-c.html">progress-c</a></code> </p>
+        </td>
+        <td><p>The cli progress C API</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-progress-bar-utilities" class="hasAnchor"><a href="#section-progress-bar-utilities" class="anchor"></a>Progress bar utilities</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="cli_progress_builtin_handlers.html">cli_progress_builtin_handlers()</a></code> </p>
+        </td>
+        <td><p>cli progress handlers</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cli_progress_demo.html">cli_progress_demo()</a></code> </p>
+        </td>
+        <td><p>cli progress bar demo</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cli_progress_styles.html">cli_progress_styles()</a></code> </p>
+        </td>
+        <td><p>List of built-in cli progress styles</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="progress-utils.html">cli_progress_num()</a></code> <code><a href="progress-utils.html">cli_progress_cleanup()</a></code> </p>
+        </td>
+        <td><p>Progress bar utility functions.</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-terminal-colors-and-styles" class="hasAnchor"><a href="#section-terminal-colors-and-styles" class="anchor"></a>Terminal Colors and Styles</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="num_ansi_colors.html">num_ansi_colors()</a></code> </p>
+        </td>
+        <td><p>Detect the number of ANSI colors to use</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi-styles.html">bg_black()</a></code> <code><a href="ansi-styles.html">bg_blue()</a></code> <code><a href="ansi-styles.html">bg_cyan()</a></code> <code><a href="ansi-styles.html">bg_green()</a></code> <code><a href="ansi-styles.html">bg_magenta()</a></code> <code><a href="ansi-styles.html">bg_red()</a></code> <code><a href="ansi-styles.html">bg_white()</a></code> <code><a href="ansi-styles.html">bg_yellow()</a></code> <code><a href="ansi-styles.html">bg_none()</a></code> <code><a href="ansi-styles.html">col_black()</a></code> <code><a href="ansi-styles.html">col_blue()</a></code> <code><a href="ansi-styles.html">col_cyan()</a></code> <code><a href="ansi-styles.html">col_green()</a></code> <code><a href="ansi-styles.html">col_magenta()</a></code> <code><a href="ansi-styles.html">col_red()</a></code> <code><a href="ansi-styles.html">col_white()</a></code> <code><a href="ansi-styles.html">col_yellow()</a></code> <code><a href="ansi-styles.html">col_grey()</a></code> <code><a href="ansi-styles.html">col_silver()</a></code> <code><a href="ansi-styles.html">col_none()</a></code> <code><a href="ansi-styles.html">style_dim()</a></code> <code><a href="ansi-styles.html">style_blurred()</a></code> <code><a href="ansi-styles.html">style_bold()</a></code> <code><a href="ansi-styles.html">style_hidden()</a></code> <code><a href="ansi-styles.html">style_inverse()</a></code> <code><a href="ansi-styles.html">style_italic()</a></code> <code><a href="ansi-styles.html">style_reset()</a></code> <code><a href="ansi-styles.html">style_strikethrough()</a></code> <code><a href="ansi-styles.html">style_underline()</a></code> <code><a href="ansi-styles.html">style_no_bold()</a></code> <code><a href="ansi-styles.html">style_no_blurred()</a></code> <code><a href="ansi-styles.html">style_no_dim()</a></code> <code><a href="ansi-styles.html">style_no_italic()</a></code> <code><a href="ansi-styles.html">style_no_underline()</a></code> <code><a href="ansi-styles.html">style_no_inverse()</a></code> <code><a href="ansi-styles.html">style_no_hidden()</a></code> <code><a href="ansi-styles.html">style_no_strikethrough()</a></code> <code><a href="ansi-styles.html">style_no_color()</a></code> <code><a href="ansi-styles.html">style_no_bg_color()</a></code> </p>
         </td>
         <td><p>ANSI colored text</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="style_hyperlink.html">style_hyperlink()</a></code> <code><a href="style_hyperlink.html">ansi_has_hyperlink_support()</a></code> </p>
+        </td>
+        <td><p>Terminal Hyperlinks</p></td>
       </tr><tr>
         
         <td>
@@ -361,10 +546,127 @@
     </tbody><tbody>
       <tr>
         <th colspan="2">
+          <h2 id="section-styled-string-manipulation" class="hasAnchor"><a href="#section-styled-string-manipulation" class="anchor"></a>Styled String Manipulation</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="ansi_align.html">ansi_align()</a></code> </p>
+        </td>
+        <td><p>Align an ANSI colored string</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_columns.html">ansi_columns()</a></code> </p>
+        </td>
+        <td><p>Format a character vector in multiple columns</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_has_any.html">ansi_has_any()</a></code> </p>
+        </td>
+        <td><p>Check if a string has some ANSI styling</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_nchar.html">ansi_nchar()</a></code> </p>
+        </td>
+        <td><p>Count number of characters in an ANSI colored string</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_regex.html">ansi_regex()</a></code> </p>
+        </td>
+        <td><p>Perl comparible regular expression that matches ANSI escape
+sequences</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_strip.html">ansi_strip()</a></code> </p>
+        </td>
+        <td><p>Remove ANSI escape sequences from a string</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_strsplit.html">ansi_strsplit()</a></code> </p>
+        </td>
+        <td><p>Split an ANSI colored string</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_strtrim.html">ansi_strtrim()</a></code> </p>
+        </td>
+        <td><p>Truncate an ANSI string</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_strwrap.html">ansi_strwrap()</a></code> </p>
+        </td>
+        <td><p>Wrap an ANSI styled string to a certain width</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_substr.html">ansi_substr()</a></code> </p>
+        </td>
+        <td><p>Substring(s) of an ANSI colored string</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_substring.html">ansi_substring()</a></code> </p>
+        </td>
+        <td><p>Substring(s) of an ANSI colored string</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_toupper.html">ansi_toupper()</a></code> <code><a href="ansi_toupper.html">ansi_tolower()</a></code> <code><a href="ansi_toupper.html">ansi_chartr()</a></code> </p>
+        </td>
+        <td><p>ANSI character translation and case folding</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ansi_trimws.html">ansi_trimws()</a></code> </p>
+        </td>
+        <td><p>Remove leading and/or trailing whitespace from an ANSI string</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-signal-errors-with-cli-formatting" class="hasAnchor"><a href="#section-signal-errors-with-cli-formatting" class="anchor"></a>Signal errors with cli formatting</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="cli_abort.html">cli_abort()</a></code> <code><a href="cli_abort.html">cli_warn()</a></code> <code><a href="cli_abort.html">cli_inform()</a></code> </p>
+        </td>
+        <td><p>Signal an error, warning or message with a cli formatted
+message</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
           <h2 id="section-symbols" class="hasAnchor"><a href="#section-symbols" class="anchor"></a>Symbols</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -379,6 +681,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -393,6 +700,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -403,10 +715,34 @@
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-rules-boxes-and-trees" class="hasAnchor"><a href="#section-rules-boxes-and-trees" class="anchor"></a>Rules, Boxes and Trees</h2>
+          <h2 id="section-format-error-warning-and-diagnostic-messages" class="hasAnchor"><a href="#section-format-error-warning-and-diagnostic-messages" class="anchor"></a>Format error, warning and diagnostic messages</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="format_error.html">format_error()</a></code> <code><a href="format_error.html">format_warning()</a></code> <code><a href="format_error.html">format_message()</a></code> </p>
+        </td>
+        <td><p>Format an error, warning or diagnostic message</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-rules-boxes-trees-etc-" class="hasAnchor"><a href="#section-rules-boxes-trees-etc-" class="anchor"></a>Rules, Boxes, Trees, etc.</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -425,6 +761,18 @@
           <p><code><a href="tree.html">tree()</a></code> </p>
         </td>
         <td><p>Draw a tree</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="spark_bar.html">spark_bar()</a></code> </p>
+        </td>
+        <td><p>Draw a sparkline bar graph with unicode block characters</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="spark_line.html">spark_line()</a></code> </p>
+        </td>
+        <td><p>Draw a sparkline line graph with Braille characters.</p></td>
       </tr>
     </tbody><tbody>
       <tr>
@@ -433,6 +781,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -461,10 +814,15 @@
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-ansi-screen-manipulation" class="hasAnchor"><a href="#section-ansi-screen-manipulation" class="anchor"></a>ANSI screen manipulation</h2>
+          <h2 id="section-ansi-terminal-manipulation" class="hasAnchor"><a href="#section-ansi-terminal-manipulation" class="anchor"></a>ANSI Terminal Manipulation</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -485,6 +843,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -499,18 +862,17 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
           <p><code><a href="cli_output_connection.html">cli_output_connection()</a></code> </p>
         </td>
         <td><p>The connection option that cli would use</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cli_sitrep.html">cli_sitrep()</a></code> </p>
-        </td>
-        <td><p>cli situation report</p></td>
       </tr><tr>
         
         <td>
@@ -530,27 +892,77 @@
         </td>
         <td><p>Whether cli is emitting UTF-8 characters</p></td>
       </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-cli-configuration" class="hasAnchor"><a href="#section-cli-configuration" class="anchor"></a>cli Configuration</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="cli-config.html">cli-config</a></code> </p>
+        </td>
+        <td><p>cli environment variables and options</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-debugging-cli" class="hasAnchor"><a href="#section-debugging-cli" class="anchor"></a>Debugging cli</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="cli_sitrep.html">cli_sitrep()</a></code> </p>
+        </td>
+        <td><p>cli situation report</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cli_debug_doc.html">cli_debug_doc()</a></code> </p>
+        </td>
+        <td><p>Debug cli internals</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-testing-cli" class="hasAnchor"><a href="#section-testing-cli" class="anchor"></a>Testing cli</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="test_that_cli.html">test_that_cli()</a></code> </p>
+        </td>
+        <td><p>Test cli output with testthat</p></td>
+      </tr>
     </tbody>
     </table>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-introduction">Introduction</a></li>
-      <li><a href="#section-semantic-cli-elements">Semantic CLI Elements</a></li>
-      <li><a href="#section-themes">Themes</a></li>
-      <li><a href="#section-pluralization">Pluralization</a></li>
-      <li><a href="#section-terminal-colors">Terminal Colors</a></li>
-      <li><a href="#section-symbols">Symbols</a></li>
-      <li><a href="#section-applications">Applications</a></li>
-      <li><a href="#section-format-and-print-methods-with-cli">Format and print methods with cli</a></li>
-      <li><a href="#section-rules-boxes-and-trees">Rules, Boxes and Trees</a></li>
-      <li><a href="#section-spinners">Spinners</a></li>
-      <li><a href="#section-ansi-screen-manipulation">ANSI screen manipulation</a></li>
-      <li><a href="#section-console-output">Console Output</a></li>
-      <li><a href="#section-utility-functions">Utility Functions</a></li>
-    </ul>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -561,7 +973,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

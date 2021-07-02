@@ -10,23 +10,27 @@
 
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -40,7 +44,6 @@
 properties. Only a small subset of CSS3 is supported, and
 a lot visual properties cannot be implemented on a terminal, so these
 will be ignored as well." />
-<meta name="twitter:card" content="summary" />
 
 
 <meta name="robots" content="noindex">
@@ -58,7 +61,7 @@ will be ignored as well." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -72,17 +75,14 @@ will be ignored as well." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">cli</a>
-        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="In-development version">2.0.0.9000</span>
+        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="In-development version">3.0.0.9000</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../reference/faq.html">FAQ</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -95,27 +95,33 @@ will be ignored as well." />
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/pluralization.html">CLI pluralization</a>
+      <a href="../articles/semantic-cli.html">Building a Semantic CLI</a>
+    </li>
+    <li>
+      <a href="../articles/usethis-ui.html">From usethis::ui Functions to cli</a>
+    </li>
+    <li>
+      <a href="../articles/pluralization.html">cli Pluralization</a>
+    </li>
+    <li>
+      <a href="../articles/progress.html">Introduction to Progress Bars in cli</a>
+    </li>
+    <li>
+      <a href="../articles/progress-advanced.html">Advanced cli Progress Bars</a>
     </li>
     <li>
       <a href="../articles/rules-boxes-trees.html">Rules, Boxes and Trees</a>
     </li>
-    <li>
-      <a href="../articles/semantic-cli.html">Building a Semantic CLI</a>
-    </li>
-    <li>
-      <a href="../articles/usethis-ui.html">From usethis::ui functions to cli</a>
-    </li>
   </ul>
 </li>
 <li>
-  <a href="../news/index.html">Changelog</a>
+  <a href="../news/index.html">News</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/r-lib/cli">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/r-lib/cli/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -153,7 +159,7 @@ will be ignored as well.</p>
 <p>The style of an element is calculated from themes from four sources.
 These form a stack, and the themes on the top of the stack take
 precedence, over themes in the bottom.</p><ol>
-<li><p>The cli package has a builtin theme. This is always active.
+<li><p>The cli package has a built-in theme. This is always active.
 See <code><a href='builtin_theme.html'>builtin_theme()</a></code>.</p></li>
 <li><p>When an app object is created via <code><a href='start_app.html'>start_app()</a></code>, the caller can
 specify a theme, that is added to theme stack. If no theme is
@@ -203,39 +209,81 @@ left, right, top and bottom margins, background and foreground colors,
 bold and italic fonts, underlined text. The <code>before</code> and <code>after</code>
 properties are supported to insert text before and after the
 content of the element.</p>
-<p>More properties might be adder later.</p>
-<p>Please see the example themes and the source code for now for the
-details.</p>
+<p>The current list of properties:</p><ul>
+<li><p><code>after</code>: A string literal to insert after the element. It can also be
+a function that returns a string literal. Supported by all inline
+elements, list items, alerts and rules.</p></li>
+<li><p><code>background-color</code>: An R color name, or HTML hexadecimal color.
+It can be applied to most elements (inline elements, rules, text,
+etc.), but the background of containers is not colored properly
+currently.</p></li>
+<li><p><code>before</code>: A string literal to insert before the element. It can also be
+a function that returns a string literal. Supported by all inline
+elements, list items, alerts and rules.</p></li>
+<li><p><code>class-map</code>: Its value can be a named list, and it specifies how
+R (S3) class names are mapped to cli class names. E.g.
+<code><a href='https://rdrr.io/r/base/list.html'>list(fs_path = "file")</a></code> specifies that <code>fs_path</code> objects (from the fs
+package) should always print as <code>.file</code> objects in cli.</p></li>
+<li><p><code>color</code>: Text color, an R color name or a HTML hexadecimal color. It
+can be applied to most elements that are printed.</p></li>
+<li><p><code>collapse</code>: Specifies how to collapse a vector, before applying
+styling. If a character string, then that is used as the separator.
+If a function, then it is called, with the vector as the only
+argument.</p></li>
+<li><p><code>digits</code>: Number of digits after the decimal point for numeric inline
+element of class <code>.val</code>.</p></li>
+<li><p><code>fmt</code>: Generic formatter function that takes an input text and returns
+formatted text. Can be applied to most elements. If colors are in use,
+the input text provided to <code>fmt</code> already includes ANSI sequences.</p></li>
+<li><p><code>font-style</code>: If <code>"italic"</code> then the text is printed as cursive.</p></li>
+<li><p><code>font-weight</code>: If <code>"bold"</code>, then the text is printed in boldface.</p></li>
+<li><p><code>line-type</code>: Line type for <code><a href='cli_rule.html'>cli_rule()</a></code>.</p></li>
+<li><p><code>list-style-type</code>: String literal or functions that returns a string
+literal, to be used as a list item marker in un-ordered lists.</p></li>
+<li><p><code>margin-bottom</code>, <code>margin-left</code>, <code>margin-right</code>, <code>margin-top</code>: Margins.</p></li>
+<li><p><code>padding-left</code>, <code>padding-right</code>: This is currently used the same way
+as the margins, but this might change later.</p></li>
+<li><p><code>start</code>: Integer number, the first element in an ordered list.</p></li>
+<li><p><code>string_quote</code>: Quoting character for inline elements of class <code>.val</code>.</p></li>
+<li><p><code>text-decoration</code>: If <code>"underline"</code>, then underlined text is created.</p></li>
+<li><p><code>text-exdent</code>: Amound of indentation from the second line of wrapped
+text.</p></li>
+<li><p><code>transform</code>: A function to call on glue substitutions, before
+collapsing them. Note that <code>transform</code> is applied prior to
+implementing color via ANSI sequences.</p></li>
+<li><p><code>vec_last</code>: The last separator when collapsing vectors.</p></li>
+<li><p><code>vec_sep</code>: The separator to use when collapsing vectors.</p></li>
+<li><p><code>vec_trunc</code>: Vectors longer than this will be truncated. Defaults to
+100.</p></li>
+</ul>
+
+<p>More properties might be added later. If you think that a property is
+not applied properly to an element, please open an issue about it in
+the cli issue tracker.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
 
     
 
 <p>Color of headings, that are only active in paragraphs with an
-'output' class:</p><pre>list(
-  "par.output h1" = list("background-color" = "red", color = "#e0e0e0"),
-  "par.output h2" = list("background-color" = "orange", color = "#e0e0e0"),
-  "par.output h3" = list("background-color" = "blue", color = "#e0e0e0")
-)
+'output' class:</p><pre><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
+  <span class='st'>"par.output h1"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='st'>"background-color"</span> <span class='op'>=</span> <span class='st'>"red"</span>, color <span class='op'>=</span> <span class='st'>"#e0e0e0"</span><span class='op'>)</span>,
+  <span class='st'>"par.output h2"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='st'>"background-color"</span> <span class='op'>=</span> <span class='st'>"orange"</span>, color <span class='op'>=</span> <span class='st'>"#e0e0e0"</span><span class='op'>)</span>,
+  <span class='st'>"par.output h3"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='st'>"background-color"</span> <span class='op'>=</span> <span class='st'>"blue"</span>, color <span class='op'>=</span> <span class='st'>"#e0e0e0"</span><span class='op'>)</span>
+<span class='op'>)</span>
 </pre>
 
-<p>Create a custom alert type:</p><pre>list(
-  ".alert-start" = list(before = symbol$play),
-  ".alert-stop"  = list(before = symbol$stop)
-)
+<p>Create a custom alert type:</p><pre><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
+  <span class='st'>".alert-start"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>before <span class='op'>=</span> <span class='va'>symbol</span><span class='op'>$</span><span class='va'>play</span><span class='op'>)</span>,
+  <span class='st'>".alert-stop"</span>  <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>before <span class='op'>=</span> <span class='va'>symbol</span><span class='op'>$</span><span class='va'>stop</span><span class='op'>)</span>
+<span class='op'>)</span>
 </pre>
 
 
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#adding-themes">Adding themes</a></li>
-      <li><a href="#writing-themes">Writing themes</a></li>
-      <li><a href="#formatter-callbacks">Formatter callbacks</a></li>
-      <li><a href="#supported-properties">Supported properties</a></li>
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -246,7 +294,7 @@ details.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

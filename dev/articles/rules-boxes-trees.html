@@ -6,20 +6,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rules, Boxes and Trees • cli</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Rules, Boxes and Trees">
-<meta property="og:description" content="">
-<meta name="twitter:card" content="summary">
+<meta property="og:description" content="cli">
 <meta name="robots" content="noindex">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -32,17 +32,14 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">cli</a>
-        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="In-development version">2.0.0.9000</span>
+        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="In-development version">3.0.0.9000</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../reference/faq.html">FAQ</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -55,27 +52,33 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/pluralization.html">CLI pluralization</a>
+      <a href="../articles/semantic-cli.html">Building a Semantic CLI</a>
+    </li>
+    <li>
+      <a href="../articles/usethis-ui.html">From usethis::ui Functions to cli</a>
+    </li>
+    <li>
+      <a href="../articles/pluralization.html">cli Pluralization</a>
+    </li>
+    <li>
+      <a href="../articles/progress.html">Introduction to Progress Bars in cli</a>
+    </li>
+    <li>
+      <a href="../articles/progress-advanced.html">Advanced cli Progress Bars</a>
     </li>
     <li>
       <a href="../articles/rules-boxes-trees.html">Rules, Boxes and Trees</a>
     </li>
-    <li>
-      <a href="../articles/semantic-cli.html">Building a Semantic CLI</a>
-    </li>
-    <li>
-      <a href="../articles/usethis-ui.html">From usethis::ui functions to cli</a>
-    </li>
   </ul>
 </li>
 <li>
-  <a href="../news/index.html">Changelog</a>
+  <a href="../news/index.html">News</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/r-lib/cli">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/r-lib/cli/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -89,14 +92,14 @@
 
       
 
-      </header><script src="rules-boxes-trees_files/htmlwidgets-1.5.1/htmlwidgets.js"></script><link href="rules-boxes-trees_files/asciinema_player-2.6.1/asciinema-player.css" rel="stylesheet">
-<script src="rules-boxes-trees_files/asciinema_player-2.6.1/asciinema-player.js"></script><script src="rules-boxes-trees_files/jquery-3.2.1/jquery-3.2.1.min.js"></script><script src="rules-boxes-trees_files/asciinema_player-binding-0.0.0.9001/asciinema_player.js"></script><div class="row">
+      </header><script src="rules-boxes-trees_files/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="rules-boxes-trees_files/htmlwidgets-1.5.3/htmlwidgets.js"></script><link href="rules-boxes-trees_files/asciinema_player-2.6.1/asciinema-player.css" rel="stylesheet">
+<script src="rules-boxes-trees_files/asciinema_player-2.6.1/asciinema-player.js"></script><script src="rules-boxes-trees_files/jquery-3.2.1/jquery-3.2.1.min.js"></script><script src="rules-boxes-trees_files/asciinema_player-binding-1.0.0.9000/asciinema_player.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>Rules, Boxes and Trees</h1>
+      <h1 data-toc-skip>Rules, Boxes and Trees</h1>
                         <h4 class="author">Gábor Csárdi</h4>
             
-            <h4 class="date">2020-01-06</h4>
+            <h4 class="date">2021-07-02</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/r-lib/cli/blob/master/vignettes/rules-boxes-trees.Rmd"><code>vignettes/rules-boxes-trees.Rmd</code></a></small>
       <div class="hidden name"><code>rules-boxes-trees.Rmd</code></div>
@@ -105,7 +108,8 @@
 
     
     
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(cli)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://cli.r-lib.org">cli</a></span><span class="op">)</span></code></pre></div>
 <div id="introduction" class="section level1">
 <h1 class="hasAnchor">
 <a href="#introduction" class="anchor"></a>Introduction</h1>
@@ -118,115 +122,145 @@
 <div id="simple-rule-double-rule-bars" class="section level2">
 <h2 class="hasAnchor">
 <a href="#simple-rule-double-rule-bars" class="anchor"></a>Simple rule, double rule, bars</h2>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule()</a></code></pre>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-2.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(line = 2)</a></code></pre>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>line <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-3.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(line = "bar2")</a></code></pre>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>line <span class="op">=</span> <span class="st">"bar2"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-4.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(line = "bar5")</a></code></pre>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>line <span class="op">=</span> <span class="st">"bar5"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-5.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(center = "TITLE", line = "~")</a></code></pre>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>center <span class="op">=</span> <span class="st">"TITLE"</span>, line <span class="op">=</span> <span class="st">"~"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-6.svg" width="100%"></p>
 </div>
 <div id="labels" class="section level2">
 <h2 class="hasAnchor">
 <a href="#labels" class="anchor"></a>Labels</h2>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(left = "Results")</a></code></pre>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>left <span class="op">=</span> <span class="st">"Results"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-7.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(center = " * RESULTS * ")</a></code></pre>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>center <span class="op">=</span> <span class="st">" * RESULTS * "</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-8.svg" width="100%"></p>
 </div>
 <div id="colors" class="section level2">
 <h2 class="hasAnchor">
 <a href="#colors" class="anchor"></a>Colors</h2>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(center = col_red(" * RESULTS * "))</a></code></pre>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>center <span class="op">=</span> <span class="fu"><a href="../reference/ansi-styles.html">col_red</a></span><span class="op">(</span><span class="st">" * RESULTS * "</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-9.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(center = " * RESULTS * ", col = "red")</a></code></pre>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>center <span class="op">=</span> <span class="st">" * RESULTS * "</span>, col <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-10.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(center = " * RESULTS * ", line_col = "red")</a></code></pre>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>center <span class="op">=</span> <span class="st">" * RESULTS * "</span>, line_col <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-11.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(center = "TITLE", line = "~-", line_col = "blue")</a></code></pre>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>center <span class="op">=</span> <span class="st">"TITLE"</span>, line <span class="op">=</span> <span class="st">"~-"</span>, line_col <span class="op">=</span> <span class="st">"blue"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-12.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/rule.html">rule(center = bg_red(" ", symbol$star, "TITLE", symbol$star, " "),
-  line = "\u2582", line_col = "orange")</a></code></pre>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/rule.html">rule</a></span><span class="op">(</span>center <span class="op">=</span> <span class="fu"><a href="../reference/ansi-styles.html">bg_red</a></span><span class="op">(</span><span class="st">" "</span>, <span class="va">symbol</span><span class="op">$</span><span class="va">star</span>, <span class="st">"TITLE"</span>, <span class="va">symbol</span><span class="op">$</span><span class="va">star</span>, <span class="st">" "</span><span class="op">)</span>,
+  line <span class="op">=</span> <span class="st">"\u2582"</span>, line_col <span class="op">=</span> <span class="st">"orange"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-13.svg" width="100%"></p>
 </div>
 </div>
 <div id="boxes" class="section level1">
 <h1 class="hasAnchor">
 <a href="#boxes" class="anchor"></a>Boxes</h1>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!")</a></code></pre>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-14.svg" width="100%"></p>
 <div id="change-border-style" class="section level2">
 <h2 class="hasAnchor">
 <a href="#change-border-style" class="anchor"></a>Change border style</h2>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", border_style = "double")</a></code></pre>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, border_style <span class="op">=</span> <span class="st">"double"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-15.svg" width="100%"></p>
 </div>
 <div id="multiple-lines-of-text" class="section level2">
 <h2 class="hasAnchor">
 <a href="#multiple-lines-of-text" class="anchor"></a>Multiple lines of text</h2>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx(c("Hello", "there!"), padding = 1)</a></code></pre>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Hello"</span>, <span class="st">"there!"</span><span class="op">)</span>, padding <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-16.svg" width="100%"></p>
 </div>
 <div id="padding-and-margin" class="section level2">
 <h2 class="hasAnchor">
 <a href="#padding-and-margin" class="anchor"></a>Padding and margin</h2>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", padding = 1)</a></code></pre>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, padding <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-17.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", padding = c(1, 5, 1, 5))</a></code></pre>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, padding <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">1</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-18.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", margin = 1)</a></code></pre>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, margin <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-19.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", margin = c(1, 5, 1, 5))</a></code></pre>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, margin <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">1</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-20.svg" width="100%"></p>
 </div>
 <div id="floating" class="section level2">
 <h2 class="hasAnchor">
 <a href="#floating" class="anchor"></a>Floating</h2>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", padding = 1, float = "center")</a></code></pre>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, padding <span class="op">=</span> <span class="fl">1</span>, float <span class="op">=</span> <span class="st">"center"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-21.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", padding = 1, float = "right")</a></code></pre>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, padding <span class="op">=</span> <span class="fl">1</span>, float <span class="op">=</span> <span class="st">"right"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-22.svg" width="100%"></p>
 </div>
 <div id="colors-1" class="section level2">
 <h2 class="hasAnchor">
 <a href="#colors-1" class="anchor"></a>Colors</h2>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx(col_cyan("Hello there!"), padding = 1, float = "center")</a></code></pre>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="fu"><a href="../reference/ansi-styles.html">col_cyan</a></span><span class="op">(</span><span class="st">"Hello there!"</span><span class="op">)</span>, padding <span class="op">=</span> <span class="fl">1</span>, float <span class="op">=</span> <span class="st">"center"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-23.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", padding = 1, background_col = "brown")</a></code></pre>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, padding <span class="op">=</span> <span class="fl">1</span>, background_col <span class="op">=</span> <span class="st">"brown"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-24.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", padding = 1, background_col = bg_red)</a></code></pre>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, padding <span class="op">=</span> <span class="fl">1</span>, background_col <span class="op">=</span> <span class="va">bg_red</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-25.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", padding = 1, border_col = "green")</a></code></pre>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, padding <span class="op">=</span> <span class="fl">1</span>, border_col <span class="op">=</span> <span class="st">"green"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-26.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx("Hello there!", padding = 1, border_col = col_red)</a></code></pre>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="st">"Hello there!"</span>, padding <span class="op">=</span> <span class="fl">1</span>, border_col <span class="op">=</span> <span class="va">col_red</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-27.svg" width="100%"></p>
 </div>
 <div id="label-alignment" class="section level2">
 <h2 class="hasAnchor">
 <a href="#label-alignment" class="anchor"></a>Label alignment</h2>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx(c("Hi", "there", "you!"), padding = 1, align = "left")</a></code></pre>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Hi"</span>, <span class="st">"there"</span>, <span class="st">"you!"</span><span class="op">)</span>, padding <span class="op">=</span> <span class="fl">1</span>, align <span class="op">=</span> <span class="st">"left"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-28.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx(c("Hi", "there", "you!"), padding = 1, align = "center")</a></code></pre>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Hi"</span>, <span class="st">"there"</span>, <span class="st">"you!"</span><span class="op">)</span>, padding <span class="op">=</span> <span class="fl">1</span>, align <span class="op">=</span> <span class="st">"center"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-29.svg" width="100%"></p>
-<pre class="asciicast"><code><a href="../reference/boxx.html">boxx(c("Hi", "there", "you!"), padding = 1, align = "right")</a></code></pre>
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Hi"</span>, <span class="st">"there"</span>, <span class="st">"you!"</span><span class="op">)</span>, padding <span class="op">=</span> <span class="fl">1</span>, align <span class="op">=</span> <span class="st">"right"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-30.svg" width="100%"></p>
 </div>
 <div id="a-very-customized-box" class="section level2">
 <h2 class="hasAnchor">
 <a href="#a-very-customized-box" class="anchor"></a>A very customized box</h2>
-<pre class="asciicast"><code>star &lt;- symbol$star
-label &lt;- c(paste(star, "Hello", star), "  there!")
-boxx(
-  col_white(label),
-  border_style="round",
-  padding = 1,
-  float = "center",
-  border_col = "tomato3",
-  background_col="darkolivegreen"
-)</code></pre>
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">star</span> <span class="op">&lt;-</span> <span class="va">symbol</span><span class="op">$</span><span class="va">star</span>
+<span class="va">label</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">star</span>, <span class="st">"Hello"</span>, <span class="va">star</span><span class="op">)</span>, <span class="st">"  there!"</span><span class="op">)</span>
+<span class="fu"><a href="../reference/list_border_styles.html">boxx</a></span><span class="op">(</span>
+  <span class="fu"><a href="../reference/ansi-styles.html">col_white</a></span><span class="op">(</span><span class="va">label</span><span class="op">)</span>,
+  border_style<span class="op">=</span><span class="st">"round"</span>,
+  padding <span class="op">=</span> <span class="fl">1</span>,
+  float <span class="op">=</span> <span class="st">"center"</span>,
+  border_col <span class="op">=</span> <span class="st">"tomato3"</span>,
+  background_col<span class="op">=</span><span class="st">"darkolivegreen"</span>
+<span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-31.svg" width="100%"></p>
 </div>
 </div>
@@ -234,69 +268,47 @@ boxx(
 <h1 class="hasAnchor">
 <a href="#trees" class="anchor"></a>Trees</h1>
 <p>You can specify the tree with a two column data frame, containing the node ids/labels, and the list of their children.</p>
-<pre class="asciicast"><code>data &lt;- data.frame(
-  stringsAsFactors = FALSE,
-  package = c("processx", "backports", "assertthat", "Matrix",
-    "magrittr", "rprojroot", "clisymbols", "prettyunits", "withr",
-    "desc", "igraph", "R6", "crayon", "debugme", "digest", "irlba",
-    "rcmdcheck", "callr", "pkgconfig", "lattice"),
-  dependencies = I(list(
-    c("assertthat", "crayon", "debugme", "R6"), character(0),
-    character(0), "lattice", character(0), "backports", character(0),
-    c("magrittr", "assertthat"), character(0),
-    c("assertthat", "R6", "crayon", "rprojroot"),
-    c("irlba", "magrittr", "Matrix", "pkgconfig"), character(0),
-    character(0), "crayon", character(0), "Matrix",
-    c("callr", "clisymbols", "crayon", "desc", "digest", "prettyunits",
-      "R6", "rprojroot", "withr"),
-    c("processx", "R6"), character(0), character(0)
-  ))
-)
-tree(data, root = "rcmdcheck")</code></pre>
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>
+  stringsAsFactors <span class="op">=</span> <span class="cn">FALSE</span>,
+  package <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"processx"</span>, <span class="st">"backports"</span>, <span class="st">"assertthat"</span>, <span class="st">"Matrix"</span>,
+    <span class="st">"magrittr"</span>, <span class="st">"rprojroot"</span>, <span class="st">"clisymbols"</span>, <span class="st">"prettyunits"</span>, <span class="st">"withr"</span>,
+    <span class="st">"desc"</span>, <span class="st">"igraph"</span>, <span class="st">"R6"</span>, <span class="st">"crayon"</span>, <span class="st">"debugme"</span>, <span class="st">"digest"</span>, <span class="st">"irlba"</span>,
+    <span class="st">"rcmdcheck"</span>, <span class="st">"callr"</span>, <span class="st">"pkgconfig"</span>, <span class="st">"lattice"</span><span class="op">)</span>,
+  dependencies <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/AsIs.html">I</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
+    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"assertthat"</span>, <span class="st">"crayon"</span>, <span class="st">"debugme"</span>, <span class="st">"R6"</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>,
+    <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>, <span class="st">"lattice"</span>, <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>, <span class="st">"backports"</span>, <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>,
+    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"magrittr"</span>, <span class="st">"assertthat"</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>,
+    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"assertthat"</span>, <span class="st">"R6"</span>, <span class="st">"crayon"</span>, <span class="st">"rprojroot"</span><span class="op">)</span>,
+    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"irlba"</span>, <span class="st">"magrittr"</span>, <span class="st">"Matrix"</span>, <span class="st">"pkgconfig"</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>,
+    <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>, <span class="st">"crayon"</span>, <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>, <span class="st">"Matrix"</span>,
+    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"callr"</span>, <span class="st">"clisymbols"</span>, <span class="st">"crayon"</span>, <span class="st">"desc"</span>, <span class="st">"digest"</span>, <span class="st">"prettyunits"</span>,
+      <span class="st">"R6"</span>, <span class="st">"rprojroot"</span>, <span class="st">"withr"</span><span class="op">)</span>,
+    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"processx"</span>, <span class="st">"R6"</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/character.html">character</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>
+  <span class="op">)</span><span class="op">)</span>
+<span class="op">)</span>
+<span class="fu"><a href="../reference/tree.html">tree</a></span><span class="op">(</span><span class="va">data</span>, root <span class="op">=</span> <span class="st">"rcmdcheck"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-32.svg" width="100%"></p>
 <p>An optional third column may contain custom labels. These can be colored as well:</p>
-<pre class="asciicast"><code>data$label &lt;- paste(data$package,
-  col_grey(paste0("(", c("2.0.0.1", "1.1.1", "0.2.0", "1.2-11",
-    "1.5", "1.2", "1.2.0", "1.0.2", "2.0.0", "1.1.1.9000", "1.1.2",
-    "2.2.2", "1.3.4", "1.0.2", "0.6.12", "2.2.1", "1.2.1.9002",
-    "1.0.0.9000", "2.0.1", "0.20-35"), ")"))
-  )
-roots &lt;- ! data$package %in% unlist(data$dependencies)
-data$label[roots] &lt;- col_cyan(style_italic(data$label[roots]))
-tree(data, root = "rcmdcheck")</code></pre>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">data</span><span class="op">$</span><span class="va">label</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">data</span><span class="op">$</span><span class="va">package</span>,
+  <span class="fu"><a href="../reference/ansi-styles.html">col_grey</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span><span class="st">"("</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"2.0.0.1"</span>, <span class="st">"1.1.1"</span>, <span class="st">"0.2.0"</span>, <span class="st">"1.2-11"</span>,
+    <span class="st">"1.5"</span>, <span class="st">"1.2"</span>, <span class="st">"1.2.0"</span>, <span class="st">"1.0.2"</span>, <span class="st">"2.0.0"</span>, <span class="st">"1.1.1.9000"</span>, <span class="st">"1.1.2"</span>,
+    <span class="st">"2.2.2"</span>, <span class="st">"1.3.4"</span>, <span class="st">"1.0.2"</span>, <span class="st">"0.6.12"</span>, <span class="st">"2.2.1"</span>, <span class="st">"1.2.1.9002"</span>,
+    <span class="st">"1.0.0.9000"</span>, <span class="st">"2.0.1"</span>, <span class="st">"0.20-35"</span><span class="op">)</span>, <span class="st">")"</span><span class="op">)</span><span class="op">)</span>
+  <span class="op">)</span>
+<span class="va">roots</span> <span class="op">&lt;-</span> <span class="op">!</span> <span class="va">data</span><span class="op">$</span><span class="va">package</span> <span class="op">%in%</span> <span class="fu"><a href="https://rdrr.io/r/base/unlist.html">unlist</a></span><span class="op">(</span><span class="va">data</span><span class="op">$</span><span class="va">dependencies</span><span class="op">)</span>
+<span class="va">data</span><span class="op">$</span><span class="va">label</span><span class="op">[</span><span class="va">roots</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ansi-styles.html">col_cyan</a></span><span class="op">(</span><span class="fu"><a href="../reference/ansi-styles.html">style_italic</a></span><span class="op">(</span><span class="va">data</span><span class="op">$</span><span class="va">label</span><span class="op">[</span><span class="va">roots</span><span class="op">]</span><span class="op">)</span><span class="op">)</span>
+<span class="fu"><a href="../reference/tree.html">tree</a></span><span class="op">(</span><span class="va">data</span>, root <span class="op">=</span> <span class="st">"rcmdcheck"</span><span class="op">)</span></code></pre></div>
 <p><img src="rules-boxes-trees_files/figure-html/unnamed-chunk-33.svg" width="100%"></p>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <div id="tocnav">
-      <h2 class="hasAnchor">
-<a href="#tocnav" class="anchor"></a>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-<li><a href="#introduction">Introduction</a></li>
-      <li>
-<a href="#rules">Rules</a><ul class="nav nav-pills nav-stacked">
-<li><a href="#simple-rule-double-rule-bars">Simple rule, double rule, bars</a></li>
-      <li><a href="#labels">Labels</a></li>
-      <li><a href="#colors">Colors</a></li>
-      </ul>
-</li>
-      <li>
-<a href="#boxes">Boxes</a><ul class="nav nav-pills nav-stacked">
-<li><a href="#change-border-style">Change border style</a></li>
-      <li><a href="#multiple-lines-of-text">Multiple lines of text</a></li>
-      <li><a href="#padding-and-margin">Padding and margin</a></li>
-      <li><a href="#floating">Floating</a></li>
-      <li><a href="#colors-1">Colors</a></li>
-      <li><a href="#label-alignment">Label alignment</a></li>
-      <li><a href="#a-very-customized-box">A very customized box</a></li>
-      </ul>
-</li>
-      <li><a href="#trees">Trees</a></li>
-      </ul>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
 </div>
-      </div>
 
 </div>
 
@@ -307,7 +319,7 @@ tree(data, root = "rcmdcheck")</code></pre>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

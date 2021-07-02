@@ -10,23 +10,27 @@
 
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -53,7 +57,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -67,17 +71,14 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">cli</a>
-        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="In-development version">2.0.0.9000</span>
+        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="In-development version">3.0.0.9000</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../reference/faq.html">FAQ</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -90,27 +91,33 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/pluralization.html">CLI pluralization</a>
+      <a href="../articles/semantic-cli.html">Building a Semantic CLI</a>
+    </li>
+    <li>
+      <a href="../articles/usethis-ui.html">From usethis::ui Functions to cli</a>
+    </li>
+    <li>
+      <a href="../articles/pluralization.html">cli Pluralization</a>
+    </li>
+    <li>
+      <a href="../articles/progress.html">Introduction to Progress Bars in cli</a>
+    </li>
+    <li>
+      <a href="../articles/progress-advanced.html">Advanced cli Progress Bars</a>
     </li>
     <li>
       <a href="../articles/rules-boxes-trees.html">Rules, Boxes and Trees</a>
     </li>
-    <li>
-      <a href="../articles/semantic-cli.html">Building a Semantic CLI</a>
-    </li>
-    <li>
-      <a href="../articles/usethis-ui.html">From usethis::ui functions to cli</a>
-    </li>
   </ul>
 </li>
 <li>
-  <a href="../news/index.html">Changelog</a>
+  <a href="../news/index.html">News</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/r-lib/cli">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/r-lib/cli/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -127,13 +134,129 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Changelog <small></small></h1>
+      <h1 data-toc-skip>Changelog <small></small></h1>
       <small>Source: <a href='https://github.com/r-lib/cli/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div id="cli-2-0-0" class="section level1">
-<h1 class="page-header">
-<a href="#cli-2-0-0" class="anchor"></a>cli 2.0.0<small> 2019-12-09 </small>
+    <div id="cli-development-version" class="section level1">
+<h1 class="page-header" data-toc-text="development version">
+<a href="#cli-development-version" class="anchor"></a>cli (development version)<small> Unreleased </small>
+</h1>
+</div>
+    <div id="cli-300" class="section level1">
+<h1 class="page-header" data-toc-text="3.0.0">
+<a href="#cli-300" class="anchor"></a>cli 3.0.0<small> 2021-06-30 </small>
+</h1>
+<ul>
+<li><p>New functions for progress bars, please see the new articles at <a href="https://cli.r-lib.org/articles/" class="uri">https://cli.r-lib.org/articles/</a> for details.</p></li>
+<li><p>New <code><a href="../reference/cli_abort.html">cli_abort()</a></code>, <code><a href="../reference/cli_abort.html">cli_warn()</a></code> and <code><a href="../reference/cli_abort.html">cli_inform()</a></code> functions, to throw errors with cli pluralization and styling.</p></li>
+<li><p>New <code><a href="../reference/format_inline.html">format_inline()</a></code> function to format a cli string without emitting it (<a href='https://github.com/r-lib/cli/issues/278'>#278</a>).</p></li>
+</ul>
+</div>
+    <div id="cli-250" class="section level1">
+<h1 class="page-header" data-toc-text="2.5.0">
+<a href="#cli-250" class="anchor"></a>cli 2.5.0<small> 2021-04-26 </small>
+</h1>
+<ul>
+<li><p>New <code>style_no_*()</code> functions to locally undo styling. New <code><a href="../reference/ansi-styles.html">col_none()</a></code> and <code><a href="../reference/ansi-styles.html">bg_none()</a></code> functions to locally undo text color and background color.</p></li>
+<li><p>It is now possible to undo text and background color in a theme, by setting them to <code>NULL</code> or <code>"none"</code>.</p></li>
+<li><p><code>cli_memo()</code> was renamed to <code><a href="../reference/cli_bullets.html">cli_bullets()</a></code>, as it is by default formatted as a bullet list (<a href='https://github.com/r-lib/cli/issues/250'>#250</a>).</p></li>
+<li><p>New <code><a href="../reference/ansi_toupper.html">ansi_toupper()</a></code>, <code>ansi_tolower</code> and <code><a href="../reference/ansi_toupper.html">ansi_chartr()</a></code> functions, the ANSI styling aware variants of <code><a href="https://rdrr.io/r/base/chartr.html">toupper()</a></code>, <code><a href="https://rdrr.io/r/base/chartr.html">tolower()</a></code> and <code><a href="https://rdrr.io/r/base/chartr.html">chartr()</a></code> (<a href='https://github.com/r-lib/cli/issues/248'>#248</a>).</p></li>
+<li><p>New <code><a href="../reference/test_that_cli.html">test_that_cli()</a></code> helper function to write testthat tests for cli output.</p></li>
+<li><p><code><a href="../reference/tree.html">tree()</a></code> now does not produce warnings for tibbles (<a href='https://github.com/r-lib/cli/issues/238'>#238</a>).</p></li>
+<li><p>New inline style: <code>.cls</code> to format class names, e.g. <code>"{.var fit} must be an {.cls lm} object"</code>.</p></li>
+</ul>
+</div>
+    <div id="cli-240" class="section level1">
+<h1 class="page-header" data-toc-text="2.4.0">
+<a href="#cli-240" class="anchor"></a>cli 2.4.0<small> 2021-04-05 </small>
+</h1>
+<ul>
+<li><p>New <code>cli_memo()</code> function to create a list of items or tasks.</p></li>
+<li><p>New <code><a href="../reference/cli.html">cli::cli()</a></code> function to create a single cli message from multiple cli calls (<a href='https://github.com/r-lib/cli/issues/170'>#170</a>).</p></li>
+<li><p>cli now highlights weird names, e.g. path names with leading or trailing space (<a href='https://github.com/r-lib/cli/issues/227'>#227</a>).</p></li>
+<li><p>Styling is fixed at several places. In particular, nested lists should be now formatted better (<a href='https://github.com/r-lib/cli/issues/221'>#221</a>).</p></li>
+<li><p>New <code><a href="../reference/spark_bar.html">spark_bar()</a></code> and <code><a href="../reference/spark_line.html">spark_line()</a></code> funcions to draw small bar or line charts.</p></li>
+</ul>
+</div>
+    <div id="cli-231" class="section level1">
+<h1 class="page-header" data-toc-text="2.3.1">
+<a href="#cli-231" class="anchor"></a>cli 2.3.1<small> 2021-02-23 </small>
+</h1>
+<ul>
+<li><p>ANSI color support detection works correctly now in older RStudio, and also on older R versions.</p></li>
+<li><p><code><a href="../reference/cli_h1.html">cli_h1()</a></code>, <code><a href="../reference/cli_h1.html">cli_h2()</a></code> and <code><a href="../reference/cli_h1.html">cli_h3()</a></code> now work with multiple glue substitutions (<a href='https://github.com/r-lib/cli/issues/218'>#218</a>).</p></li>
+</ul>
+</div>
+    <div id="cli-230" class="section level1">
+<h1 class="page-header" data-toc-text="2.3.0">
+<a href="#cli-230" class="anchor"></a>cli 2.3.0<small> 2021-01-31 </small>
+</h1>
+<ul>
+<li><p><code><a href="../reference/list_border_styles.html">boxx()</a></code> now correctly calculates the width of the box for non-ASCII characters.</p></li>
+<li><p>New <code><a href="../reference/ansi_trimws.html">ansi_trimws()</a></code> and <code><a href="../reference/ansi_strwrap.html">ansi_strwrap()</a></code> functions, they are similar to <code><a href="https://rdrr.io/r/base/trimws.html">trimws()</a></code> and <code><a href="https://rdrr.io/r/base/strwrap.html">strwrap()</a></code> but work on ANSI strings.</p></li>
+<li><p>New <code><a href="../reference/ansi_columns.html">ansi_columns()</a></code> function to format ANSI strings in multiple columns.</p></li>
+<li><p><code><a href="../reference/ansi_substr.html">ansi_substr()</a></code>, <code><a href="../reference/ansi_substring.html">ansi_substring()</a></code>, <code><a href="../reference/ansi_strsplit.html">ansi_strsplit()</a></code>, <code><a href="../reference/ansi_align.html">ansi_align()</a></code> now always return <code>ansi_string</code> objects.</p></li>
+<li><p><code><a href="../reference/ansi_nchar.html">ansi_nchar()</a></code>, <code><a href="../reference/ansi_align.html">ansi_align()</a></code>, <code><a href="../reference/ansi_strtrim.html">ansi_strtrim()</a></code> and the new <code><a href="../reference/ansi_strwrap.html">ansi_strwrap()</a></code> as well handle wide Unicode correctly, according to their display width.</p></li>
+<li><p><code><a href="../reference/list_border_styles.html">boxx()</a></code> can now add headers and footers to boxes.</p></li>
+</ul>
+</div>
+    <div id="cli-220" class="section level1">
+<h1 class="page-header" data-toc-text="2.2.0">
+<a href="#cli-220" class="anchor"></a>cli 2.2.0<small> 2020-11-20 </small>
+</h1>
+<ul>
+<li><p>New <code><a href="../reference/style_hyperlink.html">style_hyperlink()</a></code> function to add hyperlinks, on terminals that support them.</p></li>
+<li><p><code><a href="../reference/cli_format_method.html">cli_format_method()</a></code> now works properly in knitr, and other environments that catch message conditions (<a href='https://github.com/r-lib/cli/issues/159'>#159</a>).</p></li>
+<li><p>ANSI strings created by <code>col_*</code>, <code>bg_*</code> and <code>style_*</code> now also add the <code>character</code> class to the result. This fixes issues with code that expect <code>character</code> objects.</p></li>
+<li><p>New functions to manipulate ANSI strings: <code>ansi_aling()</code>, <code><a href="../reference/ansi_has_any.html">ansi_has_any()</a></code>, <code><a href="../reference/ansi_nchar.html">ansi_nchar()</a></code>, <code><a href="../reference/ansi_regex.html">ansi_regex()</a></code>, <code><a href="../reference/ansi_strip.html">ansi_strip()</a></code>, <code><a href="../reference/ansi_strsplit.html">ansi_strsplit()</a></code>, <code><a href="../reference/ansi_substr.html">ansi_substr()</a></code>, <code><a href="../reference/ansi_substring.html">ansi_substring()</a></code>.</p></li>
+</ul>
+</div>
+    <div id="cli-210" class="section level1">
+<h1 class="page-header" data-toc-text="2.1.0">
+<a href="#cli-210" class="anchor"></a>cli 2.1.0<small> 2020-10-12 </small>
+</h1>
+<ul>
+<li><p>New <code><a href="../reference/cli_vec.html">cli_vec()</a></code> function to allow easier formatting of collapsed vectors. It is now also possible to use styling to set the collapsing parameters (<a href='https://github.com/r-lib/cli/issues/129'>#129</a>).</p></li>
+<li><p>New <code><a href="../reference/pluralize.html">pluralize()</a></code> function to perform pluralization without generating cli output (<a href='https://github.com/r-lib/cli/issues/155'>#155</a>).</p></li>
+<li><p><code><a href="../reference/console_width.html">console_width()</a></code> works better now in RStudio, and also in terminals.</p></li>
+<li><p>Styling of verbatim text work properly now (<a href='https://github.com/r-lib/cli/issues/147'>#147</a>, <a href='https://github.com/tzakharko'>@tzakharko</a>).</p></li>
+<li><p>Messages (ie. <code>message</code> conditions) coming from cli now have the <code>cliMessage</code> class, so you can easily suppress them without suppressing other messages (<a href='https://github.com/r-lib/cli/issues/156'>#156</a>).</p></li>
+<li><p>cli prints the output to <code><a href="https://rdrr.io/r/base/showConnections.html">stderr()</a></code> now, if there is an output or message sink. This is to make interactive and non-interactive sessions consistent (<a href='https://github.com/r-lib/cli/issues/153'>#153</a>).</p></li>
+<li><p>Pluralization works corrently now if the last alternative is the empty string (<a href='https://github.com/r-lib/cli/issues/158'>#158</a>).</p></li>
+<li><p>cli now caches the result of the dark background detection in iTerm on macOS. Reload cli to delete the cache (<a href='https://github.com/r-lib/cli/issues/131'>#131</a>).</p></li>
+<li><p>The <code><a href="../reference/is_dynamic_tty.html">is_dynamic_tty()</a></code>, <code><a href="../reference/is_ansi_tty.html">is_ansi_tty()</a></code> and <code><a href="../reference/ansi_hide_cursor.html">ansi_hide_cursor()</a></code> and releted functions now default to the <code>"auto"</code> stream, which is automatically selected to be either <code><a href="https://rdrr.io/r/base/showConnections.html">stdout()</a></code> or <code><a href="https://rdrr.io/r/base/showConnections.html">stderr()</a></code>. See the manual for details (<a href='https://github.com/r-lib/cli/issues/144'>#144</a>).</p></li>
+<li><p>The default theme now quotes file names, paths, email addresses if they don’t start or end with an alphanumeric character or a slash. This is to make it easier to spot names that start or end with a space (<a href='https://github.com/r-lib/cli/issues/167'>#167</a>).</p></li>
+<li><p><code><a href="../reference/make_spinner.html">make_spinner()</a></code> clears the line properly now (<a href='https://github.com/tzakharko'>@tzakharko</a>, <a href='https://github.com/r-lib/cli/issues/164'>#164</a>).</p></li>
+<li><p>Semantic cli functions now automatically replace Unicode non-breaking space characters (<code>\u00a0</code>) with regular space characters, right before output. They are still used to calculate the line breaks, but not outputted (<a href='https://github.com/r-lib/cli/issues/161'>#161</a>).</p></li>
+<li><p>Progress bars now respect <code><a href="../reference/is_dynamic_tty.html">is_dynamic_tty()</a></code> and do not output <code>\r</code> when this is false (<a href='https://github.com/jimhester'>@jimhester</a>, <a href='https://github.com/r-lib/cli/issues/177'>#177</a>)</p></li>
+</ul>
+</div>
+    <div id="cli-202" class="section level1">
+<h1 class="page-header" data-toc-text="2.0.2">
+<a href="#cli-202" class="anchor"></a>cli 2.0.2<small> 2020-02-28 </small>
+</h1>
+<ul>
+<li><p>The status bar now does not simplify multiple spaces by a single space.</p></li>
+<li><p>cli now does not crash if it fails to detect whether the RStudio theme is a dark theme (<a href='https://github.com/r-lib/cli/issues/138'>#138</a>).</p></li>
+<li><p>cli now works better with wide Unicode characters, for example emojis. In particular, a status bar containing emojis is cleared properly (<a href='https://github.com/r-lib/cli/issues/133'>#133</a>).</p></li>
+<li><p>The status bar now does not flicker when updated, in terminals (<a href='https://github.com/r-lib/cli/issues/135'>#135</a>).</p></li>
+</ul>
+</div>
+    <div id="cli-201" class="section level1">
+<h1 class="page-header" data-toc-text="2.0.1">
+<a href="#cli-201" class="anchor"></a>cli 2.0.1<small> 2020-01-08 </small>
+</h1>
+<ul>
+<li><p>Symbols (<code>symbol$*</code>) are now correctly printed in RStudio on Windows (<a href='https://github.com/r-lib/cli/issues/124'>#124</a>).</p></li>
+<li><p>The default theme for <code><a href="../reference/cli_code.html">cli_code()</a></code> output looks better now, especially in RStudio (<a href='https://github.com/r-lib/cli/issues/123'>#123</a>).</p></li>
+<li><p>Remove spurious newline after a <code><a href="../reference/cli_process_start.html">cli_process_start()</a></code> was cleared manually, and also at the end of the function.</p></li>
+<li><p>Use Oxford comma when listing 3 or more items (<a href='https://github.com/jonocarroll'>@jonocarroll</a>, <a href='https://github.com/r-lib/cli/issues/128'>#128</a>).</p></li>
+</ul>
+</div>
+    <div id="cli-200" class="section level1">
+<h1 class="page-header" data-toc-text="2.0.0">
+<a href="#cli-200" class="anchor"></a>cli 2.0.0<small> 2019-12-09 </small>
 </h1>
 <div id="semantic-command-line-interface-tools" class="section level2">
 <h2 class="hasAnchor">
@@ -148,9 +271,9 @@
 </ul>
 </div>
 </div>
-    <div id="cli-1-1-0" class="section level1">
-<h1 class="page-header">
-<a href="#cli-1-1-0" class="anchor"></a>cli 1.1.0<small> 2019-03-19 </small>
+    <div id="cli-110" class="section level1">
+<h1 class="page-header" data-toc-text="1.1.0">
+<a href="#cli-110" class="anchor"></a>cli 1.1.0<small> 2019-03-19 </small>
 </h1>
 <ul>
 <li><p>cli has now functions to add ANSI styles to text. These use the crayon package internally, and provide a simpler interface. See the <code>col_*</code>, <code>bg_*</code>, <code>style_*</code> and also the <code><a href="../reference/make_ansi_style.html">make_ansi_style()</a></code> and <code><a href="../reference/combine_ansi_styles.html">combine_ansi_styles()</a></code> functions (<a href='https://github.com/r-lib/cli/issues/51'>#51</a>).</p></li>
@@ -161,23 +284,18 @@
 <li><p>Now <code>symbol</code> always uses ASCII symbols when the <code>cli.unicode</code> option is set to <code>FALSE</code>.</p></li>
 </ul>
 </div>
-    <div id="cli-1-0-0" class="section level1">
-<h1 class="page-header">
-<a href="#cli-1-0-0" class="anchor"></a>cli 1.0.0<small> 2017-11-05 </small>
+    <div id="cli-100" class="section level1">
+<h1 class="page-header" data-toc-text="1.0.0">
+<a href="#cli-100" class="anchor"></a>cli 1.0.0<small> 2017-11-05 </small>
 </h1>
 <p>First public release.</p>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <div id="tocnav">
-      <h2>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li><a href="#cli-2-0-0">2.0.0</a></li>
-        <li><a href="#cli-1-1-0">1.1.0</a></li>
-        <li><a href="#cli-1-0-0">1.0.0</a></li>
-      </ul>
-    </div>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 
 </div>
@@ -189,7 +307,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
